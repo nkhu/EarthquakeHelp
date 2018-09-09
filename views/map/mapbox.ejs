@@ -7,8 +7,8 @@
         var map = new mapboxgl.Map({
         container: 'map',
         style: 'mapbox://styles/angelgao123/cjltot5ea0zrp2sqc7phetoqp',
-        center: [-74.931822, 39.890053],
-        zoom: 5.2
+        center: [-75.174559, 39.910158],
+        zoom: 10.9
         });
         
         map.on('load', function() {
@@ -52,7 +52,7 @@
             
             //legend
             var layers = ['Good', 'Mild', 'Medium', 'Heavy', 'Severe'];
-            var colors = ['#ff9ed8', '#a8fe76', '#32ece3', '#9c9de2', '#fc4e2a'];
+            var colors = ['#ffe4e1', 'ffeda0', '#fcf12c', '#ffa500', '#f08080'];
             
             for (i = 0; i < layers.length; i++) {
               var layer = layers[i];

@@ -12,21 +12,25 @@
 }
 
 #landing-head {
+    padding-top: 230px;
     font-family: 'Varela Round', sans-serif;
     font-size: 100px;
-    color:black;
+    color:#1F618D;
     text-align: center;
     text-shadow: 5px 5px 5px #fff;
-    padding-top: 250px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
+    
 }
 
 #landing-btn{
      display: block; 
      margin: 0 auto;
-     width: 200px;
-     background-color: #519092;
+     height:60px;
+     width: 280px;
+     background-color: #1F618D;
      color:white;
+     text-align: center;
+     font-size: 30px;
 }
 
 
