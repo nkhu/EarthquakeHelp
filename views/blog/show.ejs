@@ -1,0 +1,21 @@
+<% include ../partials/header %>
+
+<div class="col-md-12">
+    <div class="thumbnail" id="show">
+        <div class="caption-full">
+            <h2><%= blog.title%></h2>
+            <div>Author by: <strong><%= blog.author %></strong></div>
+            <div>Date: <em><%= blog.created %></em></div>
+        </div>
+        <img src="<%= blog.image %>">
+        <!--class="img-responsive"-->
+    </div>
+</div>
+
+<div class="container" id="blogbody">
+    <h4><%= blog.content%></h4>
+    
+    <a href="/blog" style="text-align:center; color:#519092">back</a>
+</div>
+
+<% include ../partials/footer%>

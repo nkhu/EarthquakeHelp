@@ -1,0 +1,29 @@
+<% include ../partials/header %>
+
+<div class="container">
+    <header class="jumbotron">
+        <div class="container">
+            <h1 class="create">Latest Earthquake Posts</h1>
+            <p>
+                <a class="btn btn-default btn-lg" id="post-button" href="/blog/new">I want to post!</a>
+            </p>
+        </div>
+    </header>
+
+<% blogs.forEach(function(blog){ %>
+    <div class="col-md-12">
+        <div class="thumbnail">
+            <div class="caption-full">
+                <h4><a href="blog/<%= blog._id %>" style="color:#519092"><%= blog.title %></a></h4>
+                <div>Author by: <strong><%= blog.author %></strong></div>
+                <div>Date: <em><%= blog.created %></em></div>
+            </div>
+            <img src="<%= blog.image %>">
+            <!--<div><a href="blog/<%= blog._id %>" class="btn btn-primary">More Info</a></div>-->
+        </div>
+    </div>  
+<% }); %>
+
+</div>
+    
+<% include ../partials/footer%>
